@@ -2,14 +2,17 @@
 
 ## Exercise I
 
-a)
+a) O(n)
+    one loop. 
 
-
-b)
+b) O(n^2)
+    A nested loop 
 
 
 c)
 
+Not sure. It appears to halve bunnies
+O(log n)
 ## Exercise II
 
 
