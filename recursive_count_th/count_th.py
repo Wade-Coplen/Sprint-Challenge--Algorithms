@@ -10,16 +10,33 @@ Understand:
 - we need to iterate over the words and find 'th' in each word
 - what is the recursive case
 - what is base case
+Must have a base case.
+Must change its state to move towards the base case.
+Must call itself.
 '''
 def count_th(word):
-    #print(word)
-    value = "th"
-    print(value)
+    string = word
+    value = 't'
+    v = value.lower()
+    value2 = 'h'
+    v2 = value2.lower()
     count = 0
-    if value not in word:
-        return count
-    else:
-        return count_th(word[1:]) +1
+    count2 = 0
+    for i in word:
+        for j in word:
+            if i == v:
+                count = count +1
+                if j == v2:
+                    count2 = count +1
+
+                print('i am count 1', count)
+                print('i am count 2', count2)
+                print('total', count + count2)
+
+  
+    
+
+    
         
             #print('There are {count}'.format(word))
 
